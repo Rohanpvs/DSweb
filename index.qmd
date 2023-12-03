@@ -1,0 +1,41 @@
+---
+title: "Venkata Sai Rohan, Padaka"
+about:
+  template: trestles
+  image: profile.jpg
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+A passionate and meticulous Data Analyst who is passionate about transforming intricate data sets into actionable information. Experienced in utilizing statistical analysis and visualization tools to facilitate decision-making based on data-driven
+insights. Demonstrated proficiency in SQL and Python, as well as data visualization tools like Tableau.
+
+
+## Education
+
+University of North Texas, Denton | Denton, Texas
+Masters in Advanced Data Analytics | May 2024, GP4-3.5/4
+
+Roots Degree Collage | Hyderabad, India
+Bsc. Commerce in sales and Advertisement | Dec 2021
+
+## Skills
+
+Languages | SQL, Python, R
+
+Data Visualization | Tableau, Power BI
+
+Data Analysis | Excel, Jupyter
+...
+
+## Contact Information
+- **Email:** [rohanpvs24@gmail.com](mailto:rohanpvs24@gmail.com)
+- **Phone:** [+1 (940)-595 7284](tel:+19405957284)
+
+
+

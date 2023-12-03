@@ -1,0 +1,25 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+
+---
+
+My name is Rohan, this is my data science portfolio website. I am passionate and meticulous Data Analyst who is passionate about transforming intricate data sets into actionable information. Experienced in utilizing statistical analysis and visualization tools to facilitate decision-making based on data-driven
+insights. Demonstrated proficiency in SQL and Python, as well as data visualization tools like Tableau.
+
+## Contact Information
+- **Email:** [rohanpvs24@gmail.com](mailto:rohanpvs24@gmail.com)
+- **Phone:** [+1 (940)-595 7284](tel:+19405957284)
+

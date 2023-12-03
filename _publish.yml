@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: c0f02911-87fa-4db3-99dc-d69007a494d5
+      url: 'https://stupendous-pegasus-3fc7d8.netlify.app'

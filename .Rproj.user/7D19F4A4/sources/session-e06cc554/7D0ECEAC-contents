@@ -1,0 +1,7 @@
+/*-- scss:defaults --*/
+//Base documents colors
+$body-bg: #181818;
+$body-color: white;
+$link-color: #78AADB;
+//code blocks 
+$code-block-bg-alpha: -.8;

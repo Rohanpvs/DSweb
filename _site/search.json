@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "My name is Rohan, this is my data science portfolio website. I am passionate and meticulous Data Analyst who is passionate about transforming intricate data sets into actionable information. Experienced in utilizing statistical analysis and visualization tools to facilitate decision-making based on data-driven insights. Demonstrated proficiency in SQL and Python, as well as data visualization tools like Tableau."
+  },
+  {
+    "objectID": "about.html#contact-information",
+    "href": "about.html#contact-information",
+    "title": "About",
+    "section": "Contact Information",
+    "text": "Contact Information\n\nEmail: rohanpvs24@gmail.com\nPhone: +1 (940)-595 7284"
+  },
+  {
+    "objectID": "posts/customer-purchase/index.html",
+    "href": "posts/customer-purchase/index.html",
+    "title": "Analyzing Customer Purchase Behavior: A Retail Exploration",
+    "section": "",
+    "text": "Welcome to a journey through the world of data analysis! In this blog post, we’ll unravel insights from customer purchase behavior in the retail industry using R. Understanding customer behavior is crucial for businesses, and we’ll leverage R to gain valuable insights from our data.\n\n\nImagine you have a dataset containing information about customer purchases at a retail store. Our goal is to explore patterns and trends in customer behavior. Can we identify factors that influence purchase decisions, such as the time of day or specific products?\n\n\n\nBefore we dive into the code, let’s take a preliminary look at our dataset and understand its characteristics.\n\n\nCode\n# Load necessary libraries\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n\nCode\n# Generate a synthetic retail dataset for illustration purposes\nset.seed(456)\ncustomer_data &lt;- tibble(\n  customer_id = 1:200,\n  purchase_amount = rnorm(200, mean = 50, sd = 20),\n  time_of_day = sample(c(\"morning\", \"afternoon\", \"evening\"), 200, replace = TRUE)\n)\n\n# Display the first few rows of the dataset\nhead(customer_data)\n\n\n# A tibble: 6 × 3\n  customer_id purchase_amount time_of_day\n        &lt;int&gt;           &lt;dbl&gt; &lt;chr&gt;      \n1           1            23.1 evening    \n2           2            62.4 morning    \n3           3            66.0 afternoon  \n4           4            22.2 evening    \n5           5            35.7 afternoon  \n6           6            43.5 evening    \n\n\nCode\n# Visualize the distribution of purchase amounts\nggplot(customer_data, aes(x = purchase_amount)) +\n  geom_histogram(binwidth = 10, fill = \"skyblue\", color = \"black\") +\n  labs(title = \"Distribution of Purchase Amounts\", x = \"Purchase Amount\", y = \"Frequency\")\n\n\n\n\n\nCode\n# Explore the relationship between time of day and purchase amount\nggplot(customer_data, aes(x = time_of_day, y = purchase_amount)) +\n  geom_boxplot(fill = \"lightgreen\", color = \"black\") +\n  labs(title = \"Purchase Amounts by Time of Day\", x = \"Time of Day\", y = \"Purchase Amount\")"
+  },
+  {
+    "objectID": "posts/customer-purchase/index.html#the-challenge",
+    "href": "posts/customer-purchase/index.html#the-challenge",
+    "title": "Analyzing Customer Purchase Behavior: A Retail Exploration",
+    "section": "",
+    "text": "Imagine you have a dataset containing information about customer purchases at a retail store. Our goal is to explore patterns and trends in customer behavior. Can we identify factors that influence purchase decisions, such as the time of day or specific products?"
+  },
+  {
+    "objectID": "posts/customer-purchase/index.html#exploratory-data-analysis-eda",
+    "href": "posts/customer-purchase/index.html#exploratory-data-analysis-eda",
+    "title": "Analyzing Customer Purchase Behavior: A Retail Exploration",
+    "section": "",
+    "text": "Before we dive into the code, let’s take a preliminary look at our dataset and understand its characteristics.\n\n\nCode\n# Load necessary libraries\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n\nCode\n# Generate a synthetic retail dataset for illustration purposes\nset.seed(456)\ncustomer_data &lt;- tibble(\n  customer_id = 1:200,\n  purchase_amount = rnorm(200, mean = 50, sd = 20),\n  time_of_day = sample(c(\"morning\", \"afternoon\", \"evening\"), 200, replace = TRUE)\n)\n\n# Display the first few rows of the dataset\nhead(customer_data)\n\n\n# A tibble: 6 × 3\n  customer_id purchase_amount time_of_day\n        &lt;int&gt;           &lt;dbl&gt; &lt;chr&gt;      \n1           1            23.1 evening    \n2           2            62.4 morning    \n3           3            66.0 afternoon  \n4           4            22.2 evening    \n5           5            35.7 afternoon  \n6           6            43.5 evening    \n\n\nCode\n# Visualize the distribution of purchase amounts\nggplot(customer_data, aes(x = purchase_amount)) +\n  geom_histogram(binwidth = 10, fill = \"skyblue\", color = \"black\") +\n  labs(title = \"Distribution of Purchase Amounts\", x = \"Purchase Amount\", y = \"Frequency\")\n\n\n\n\n\nCode\n# Explore the relationship between time of day and purchase amount\nggplot(customer_data, aes(x = time_of_day, y = purchase_amount)) +\n  geom_boxplot(fill = \"lightgreen\", color = \"black\") +\n  labs(title = \"Purchase Amounts by Time of Day\", x = \"Time of Day\", y = \"Purchase Amount\")"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Venkata Sai Rohan, Padaka",
+    "section": "",
+    "text": "A passionate and meticulous Data Analyst who is passionate about transforming intricate data sets into actionable information. Experienced in utilizing statistical analysis and visualization tools to facilitate decision-making based on data-driven insights. Demonstrated proficiency in SQL and Python, as well as data visualization tools like Tableau."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Venkata Sai Rohan, Padaka",
+    "section": "Education",
+    "text": "Education\nUniversity of North Texas, Denton | Denton, Texas Masters in Advanced Data Analytics | May 2024, GP4-3.5/4\nRoots Degree Collage | Hyderabad, India Bsc. Commerce in sales and Advertisement | Dec 2021"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Venkata Sai Rohan, Padaka",
+    "section": "Skills",
+    "text": "Skills\nLanguages | SQL, Python, R\nData Visualization | Tableau, Power BI\nData Analysis | Excel, Jupyter …"
+  },
+  {
+    "objectID": "index.html#contact-information",
+    "href": "index.html#contact-information",
+    "title": "Venkata Sai Rohan, Padaka",
+    "section": "Contact Information",
+    "text": "Contact Information\n\nEmail: rohanpvs24@gmail.com\nPhone: +1 (940)-595 7284"
+  },
+  {
+    "objectID": "posts/linear-regression/index.html",
+    "href": "posts/linear-regression/index.html",
+    "title": "Exploring Linear Regression in R: A Predictive Modeling Adventure",
+    "section": "",
+    "text": "Welcome to another exciting data science journey! In this blog post, we’ll delve into the fascinating world of Linear Regression using R. Linear Regression is a powerful statistical method for modeling the relationship between a dependent variable and one or more independent variables. Our objective is to predict outcomes and gain insights from our data.\n\n\nImagine you have a dataset containing information about student performance. We are curious to explore whether there’s a relationship between the number of hours a student studies and their exam scores. Can we use Linear Regression to predict scores based on study hours?\n\n\n\nBefore we jump into the code, let’s take a peek at our dataset and explore its characteristics.\n\n\nCode\n# Load necessary libraries\nlibrary(ggplot2)\n\n# Generate a synthetic dataset for illustration purposes\nset.seed(123)\nstudy_hours &lt;- rnorm(100, mean = 25, sd = 5)\nexam_scores &lt;- 50 + 3 * study_hours + rnorm(100, mean = 0, sd = 10)\nstudy_data &lt;- data.frame(study_hours, exam_scores)\n\n# Display the first few rows of the dataset\nhead(study_data)\n\n\n  study_hours exam_scores\n1    22.19762    109.4888\n2    23.84911    124.1162\n3    32.79354    145.9137\n4    25.35254    122.5822\n5    25.64644    117.4231\n6    33.57532    150.2757\n\n\nCode\n# Visualize the relationship between study hours and exam scores\nggplot(study_data, aes(x = study_hours, y = exam_scores)) +\n  geom_point() +\n  labs(title = \"Relationship Between Study Hours and Exam Scores\", x = \"Study Hours\", y = \"Exam Scores\")\n\n\n\n\n\nCode\n# Build the Linear Regression model\nlinear_model &lt;- lm(exam_scores ~ study_hours, data = study_data)\n\n# Display the summary of the Linear Regression model\nsummary(linear_model)\n\n\n\nCall:\nlm(formula = exam_scores ~ study_hours, data = study_data)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-19.073  -6.835  -0.875   5.806  32.904 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  51.5956     5.5265   9.336 3.34e-15 ***\nstudy_hours   2.8951     0.2138  13.544  &lt; 2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 9.707 on 98 degrees of freedom\nMultiple R-squared:  0.6518,    Adjusted R-squared:  0.6482 \nF-statistic: 183.4 on 1 and 98 DF,  p-value: &lt; 2.2e-16\n\n\nCode\n# Create a scatter plot with the regression line\nggplot(study_data, aes(x = study_hours, y = exam_scores)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"red\") +\n  labs(title = \"Linear Regression: Study Hours vs Exam Scores\", x = \"Study Hours\", y = \"Exam Scores\")\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "posts/linear-regression/index.html#the-challenge",
+    "href": "posts/linear-regression/index.html#the-challenge",
+    "title": "Exploring Linear Regression in R: A Predictive Modeling Adventure",
+    "section": "",
+    "text": "Imagine you have a dataset containing information about student performance. We are curious to explore whether there’s a relationship between the number of hours a student studies and their exam scores. Can we use Linear Regression to predict scores based on study hours?"
+  },
+  {
+    "objectID": "posts/linear-regression/index.html#exploratory-data-analysis-eda",
+    "href": "posts/linear-regression/index.html#exploratory-data-analysis-eda",
+    "title": "Exploring Linear Regression in R: A Predictive Modeling Adventure",
+    "section": "",
+    "text": "Before we jump into the code, let’s take a peek at our dataset and explore its characteristics.\n\n\nCode\n# Load necessary libraries\nlibrary(ggplot2)\n\n# Generate a synthetic dataset for illustration purposes\nset.seed(123)\nstudy_hours &lt;- rnorm(100, mean = 25, sd = 5)\nexam_scores &lt;- 50 + 3 * study_hours + rnorm(100, mean = 0, sd = 10)\nstudy_data &lt;- data.frame(study_hours, exam_scores)\n\n# Display the first few rows of the dataset\nhead(study_data)\n\n\n  study_hours exam_scores\n1    22.19762    109.4888\n2    23.84911    124.1162\n3    32.79354    145.9137\n4    25.35254    122.5822\n5    25.64644    117.4231\n6    33.57532    150.2757\n\n\nCode\n# Visualize the relationship between study hours and exam scores\nggplot(study_data, aes(x = study_hours, y = exam_scores)) +\n  geom_point() +\n  labs(title = \"Relationship Between Study Hours and Exam Scores\", x = \"Study Hours\", y = \"Exam Scores\")\n\n\n\n\n\nCode\n# Build the Linear Regression model\nlinear_model &lt;- lm(exam_scores ~ study_hours, data = study_data)\n\n# Display the summary of the Linear Regression model\nsummary(linear_model)\n\n\n\nCall:\nlm(formula = exam_scores ~ study_hours, data = study_data)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-19.073  -6.835  -0.875   5.806  32.904 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  51.5956     5.5265   9.336 3.34e-15 ***\nstudy_hours   2.8951     0.2138  13.544  &lt; 2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 9.707 on 98 degrees of freedom\nMultiple R-squared:  0.6518,    Adjusted R-squared:  0.6482 \nF-statistic: 183.4 on 1 and 98 DF,  p-value: &lt; 2.2e-16\n\n\nCode\n# Create a scatter plot with the regression line\nggplot(study_data, aes(x = study_hours, y = exam_scores)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"red\") +\n  labs(title = \"Linear Regression: Study Hours vs Exam Scores\", x = \"Study Hours\", y = \"Exam Scores\")\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Analyzing Customer Purchase Behavior: A Retail Exploration\n\n\n\n\n\n\n\ndata-analysis\n\n\nr-programming\n\n\ncustomer-behavior\n\n\nretail\n\n\n\n\n\n\n\n\n\n\n\nDec 2, 2023\n\n\nVenkata Sai Rohan\n\n\n\n\n\n\n  \n\n\n\n\nExploring Linear Regression in R: A Predictive Modeling Adventure\n\n\n\n\n\n\n\ndata-science\n\n\nr-programming\n\n\nlinear-regression\n\n\nexploratory-data-analysis\n\n\n\n\n\n\n\n\n\n\n\nDec 2, 2023\n\n\nVenkata Sai Rohan\n\n\n\n\n\n\nNo matching items"
+  }
+]

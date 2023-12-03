@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "Rohan Portfolio"
+  favicon: "profile.jpg"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: projects
+        href: projects.qmd
+      - text: Resume
+        href: resume.qmd
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: [cosmo, theme_dark_custom.scss]
+    css: styles.css
+    code-link: true
+    code-fold: show
+    code-tools: true
+    
+editor: visual

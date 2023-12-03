@@ -1,0 +1,46 @@
+---
+title: "Analyzing Customer Purchase Behavior: A Retail Exploration"
+author: "Venkata Sai Rohan"
+date: "2023-12-02"
+categories: [data-analysis, r-programming, customer-behavior, retail]
+image: "customer.png"
+---
+
+# Introduction
+
+Welcome to a journey through the world of data analysis! In this blog post, we'll unravel insights from customer purchase behavior in the retail industry using R. Understanding customer behavior is crucial for businesses, and we'll leverage R to gain valuable insights from our data.
+
+## The Challenge
+
+Imagine you have a dataset containing information about customer purchases at a retail store. Our goal is to explore patterns and trends in customer behavior. Can we identify factors that influence purchase decisions, such as the time of day or specific products?
+
+## Exploratory Data Analysis (EDA)
+
+Before we dive into the code, let's take a preliminary look at our dataset and understand its characteristics.
+
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+
+# Generate a synthetic retail dataset for illustration purposes
+set.seed(456)
+customer_data <- tibble(
+  customer_id = 1:200,
+  purchase_amount = rnorm(200, mean = 50, sd = 20),
+  time_of_day = sample(c("morning", "afternoon", "evening"), 200, replace = TRUE)
+)
+
+# Display the first few rows of the dataset
+head(customer_data)
+
+# Visualize the distribution of purchase amounts
+ggplot(customer_data, aes(x = purchase_amount)) +
+  geom_histogram(binwidth = 10, fill = "skyblue", color = "black") +
+  labs(title = "Distribution of Purchase Amounts", x = "Purchase Amount", y = "Frequency")
+
+# Explore the relationship between time of day and purchase amount
+ggplot(customer_data, aes(x = time_of_day, y = purchase_amount)) +
+  geom_boxplot(fill = "lightgreen", color = "black") +
+  labs(title = "Purchase Amounts by Time of Day", x = "Time of Day", y = "Purchase Amount")
+```
